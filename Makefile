@@ -1,2 +1,2 @@
 build:
-	lualatex cv.tex
+	typst compile cv.typ
