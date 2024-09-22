@@ -13,7 +13,7 @@
   date: [2024 - Present],
   location: [Tokyo, Japan],
   description: list(
-    [Leading an engineering team to build a scalable data platform on AWS using Terraform, Terragrunt, and Databricks],
+    [Leading an engineering team to build a scalable data platform in a data mesh architecture on AWS using Terraform, Terragrunt, and Databricks],
     [Implementation of internal libraries and tools for data engineering and data science teams to improve productivity in Python, Java, Typescript, and Rust],
     [Design and implement CI/CD pipelines for data engineering and data science projects to deploy and monitor data pipelines and models in Databricks],
   ),
