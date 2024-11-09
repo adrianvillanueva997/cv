@@ -3,15 +3,18 @@
 #let metadata = toml("../metadata.toml")
 #let cvSection = cvSection.with(metadata: metadata)
 
-#cvSection("Skills")
-
+#cvSection("About me")
 #cvSkill(
-  type: [Langs],
+  type: [Nationality],
+  info: [Spain (EU)],
+)
+#cvSkill(
+  type: [Languages],
   info: [English, Spanish],
 )
 
 #cvSkill(
-  type: [Prog Langs],
+  type: [Coding],
   info: [Python, Java, Go, Rust, NodeJS, C, HTML/CSS/JavaScript],
 )
 

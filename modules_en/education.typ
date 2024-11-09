@@ -8,7 +8,7 @@
 #cvSection("Education")
 
 #cvEntry(
-  title: [Computer science],
+  title: [Bachelors degree in Computer science],
   society: [Universidad Europea, Madrid],
   date: [2015- 2022],
   location: [Spain],
