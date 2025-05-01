@@ -13,10 +13,12 @@
   date: [2024 - Present],
   location: [Tokyo, Japan],
   description: list(
-    [Leading an engineering team to build a scalable data platform in a data mesh architecture on AWS using Terraform, Terragrunt, and Databricks],
-    [Implementation of internal libraries and tools for data engineering and data science teams to improve productivity in Python, Java, Typescript, and Rust],
-    [Design and implement CI/CD pipelines for data engineering and data science projects to deploy and monitor data pipelines and models in Databricks],
-  ),
+    [Built a scalable AWS + Databricks data platform from the ground up, growing adoption from 0 users to company-wide usage in a data mesh architecture],
+    [Designed and implemented a Kafka-based data ingestion SDK with Rust bindings for Python, Java, TypeScript, and Go, distributed company-wide across multiple operating systems and architectures],
+    [Led CI/CD pipeline development for data engineering and data science projects, enabling deployment and monitoring of data pipelines and models in Databricks],
+    [Contributed to data quality, reconciliation, and data contracts implementation, ensuring reliability and consistency across the platform],
+    [Made the data platform accessible as a self-service for developers with clear naming conventions and best practices documentation],
+   ),
   tags: (
     "Databricks",
     "Terraform",
@@ -30,22 +32,21 @@
     "Rust",
     "kafka",
     "Open Telemetry",
+    "MLflow",
+    "Go",
   ),
 )
-
 #cvEntry(
   title: [Data Engineer],
   society: [Ahold Delhaize],
   date: [2022 - 2024],
   location: [Amsterdam, Netherlands],
   description: list(
-    [Analyze datasets with SQL/Python, collaborate for insights],
-    [Streamline CI/CD pipelines],
-    [Develop Python solutions with Kusto for automation/auditing],
-    [Create ETL pipelines on Databricks],
-    [Design internal tools for auditing/monitoring with Python],
-    [Maintain Terraform modules and CI/CD on GitHub Actions],
-    [Deploy resources on Azure/Kubernetes with ArgoCD],
+    [Maintained and evolved a company-wide data platform, providing Databricks workspaces for multiple data products and teams],
+    [Developed and optimized ETL pipelines on Databricks, enabling efficient data processing and analytics at scale],
+    [Built and maintained Terraform modules for infrastructure automation on Azure, standardizing deployments across the organization],
+    [Created monitoring and auditing tools with Python and Kusto, ensuring platform reliability and governance compliance],
+    [Implemented CI/CD pipelines with GitHub Actions and ArgoCD for streamlined deployment of services to Azure and Kubernetes],
   ),
   tags: (
     "Python",
@@ -67,15 +68,14 @@
   date: [2021 - 2022],
   location: [Amsterdam, Netherlands],
   description: list(
-    [Infrastructure as Code (IaC) with Terraform on AWS, design and implement scripts for service deployments],
-    [Maintain and optimize legacy Apache Airflow components in Python],
-    [Deploy and optimize Docker images using buildkit, caching, and multi-stage builds],
-    [Collaborate and mentor team, design and deploy production-ready datalake on AWS],
-    [Redesign and implement DevOps strategies for faster workflows],
+    [Designed and implemented Infrastructure as Code (IaC) with Terraform on AWS, reducing deployment time by 70% and improving reliability],
+    [Migrated legacy Apache Airflow pipelines to PySpark, enhancing performance and reducing operational costs],
+    [Optimized CI/CD pipelines and Docker image builds using multi-stage techniques, reducing build times and infrastructure costs],
+    [Designed and deployed a production-ready data lake on AWS, establishing data governance and enabling self-service analytics],
+    [Mentored team members and implemented improved DevOps practices, accelerating development workflows across the organization],
   ),
-  tags: ("Terraform", "AWS", "Python", "Apache Airflow", "Docker", "DevOps"),
+  tags: ("Terraform", "AWS", "Python", "Apache Airflow", "Docker", "DevOps", "PySpark"),
 )
-
 
 #cvEntry(
   title: [Software Engineer],
@@ -83,15 +83,13 @@
   date: [2019 - 2020],
   location: [Madrid, Spain],
   description: list(
-    [Assisted with data cleaning, processing, and analysis using Python and Excel, participated in team meetings and contributed to project planning and execution],
-    [Contributed to software development for automation and ETL tasks using SQL, Python, Java, and Talend],
-    [Managed Linux systems, including Ubuntu and CentOS, ensuring stability and security],
-    [Developed and prototyped machine learning models for predictive analytics and data engineering],
-    [Full-stack web development],
+    [Developed data processing applications using Python, SQL, and Java for automation and ETL tasks, improving operational efficiency],
+    [Built and maintained machine learning models for predictive analytics, enhancing data-driven decision making],
+    [Managed Linux systems and implemented full-stack web applications for internal data visualization tools],
+    [Contributed to project planning and execution, collaborating with cross-functional teams to deliver client solutions],
   ),
   tags: (
     "Python",
-    "Excel",
     "SQL",
     "Java",
     "Talend",
