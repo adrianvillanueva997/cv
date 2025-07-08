@@ -8,9 +8,12 @@
 #cvSection("Education")
 
 #cvEntry(
-  title: [Bachelors degree in Computer science],
-  society: [Universidad Europea, Madrid],
-  date: [2015- 2022],
+  title: [Bachelor’s Degree in Computer Science],
+  society: [Universidad Europea de Madrid],
+  date: [2015 – 2022],
   location: [Spain],
-  description: list([Thesis: Building a self-hosted AI driven platform for security cameras monitoring using edge computing #hBar() GPA: 9.5/10]),
+  description: list(
+    [Graduated with GPA: 9.5/10],
+    [Thesis: Self-hosted AI-driven platform for security camera monitoring using edge computing],
+  ),
 )

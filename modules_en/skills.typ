@@ -4,41 +4,43 @@
 #let cvSection = cvSection.with(metadata: metadata)
 
 #cvSection("About me")
+
 #cvSkill(
   type: [Nationality],
   info: [Spain (EU)],
 )
+
 #cvSkill(
   type: [Languages],
-  info: [English, Spanish],
+  info: [English (business fluent), Spanish (native)],
 )
 
 #cvSkill(
   type: [Coding],
-  info: [Python, Java, Go, Rust, NodeJS, C, HTML/CSS/JavaScript],
+  info: [Python, Rust, Java, Go, TypeScript, C, JavaScript, HTML/CSS],
 )
 
 #cvSkill(
-  type: [DBs],
-  info: [SQL Server, MySQL, PostgreSQL, MongoDB, AWS Athena, Cassandra, Redis],
+  type: [Cloud & Infra],
+  info: [AWS (Redshift, S3, Glue, Lambda, SageMaker), Azure, GCP, Terraform, Docker, Kubernetes],
+)
+
+#cvSkill(
+  type: [Data Engineering],
+  info: [PySpark, Pandas, Databricks, Airflow, DBT, Kafka, MLflow, FastAPI],
 )
 
 #cvSkill(
   type: [DevOps],
-  info: [Docker, Kubernetes, Terraform, Terragrunt, ArgoCD, Git, CI/CD, GitHub Actions, Prometheus, Grafana],
+  info: [CI/CD, GitHub Actions, ArgoCD, Terragrunt, Prometheus, Grafana],
 )
 
 #cvSkill(
-  type: [Data Eng],
-  info: [PySpark, Pandas, Airflow, Databricks, DBT, Kafka, FastApi],
-)
-
-#cvSkill(
-  type: [Cloud],
-  info: [AWS, GCP, Azure],
+  type: [Databases],
+  info: [SQL Server, PostgreSQL, MySQL, MongoDB, Athena, Cassandra, Redis],
 )
 
 #cvSkill(
   type: [Interests],
-  info: [Hiking, Reading, Traveling, Photography, Cooking, Music, Programming, Gaming, Gardening, Cats],
+  info: [Hiking, Reading, Photography, Cooking, Gaming, Music production, Cats],
 )
