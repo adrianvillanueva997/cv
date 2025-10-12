@@ -1,0 +1,24 @@
+articles:
+  - id: 1
+    component: ArticleProfile
+    locales: {}
+    settings:
+      order_items_by: id
+      order_items_sort: asc
+      contact_list_ids:
+        - address
+        - email
+      contact_circles_ids:
+        - instagram
+        - facebook
+        - linkedin
+        - github
+    items:
+      - id: 1
+        locales:
+          en:
+            description: Senior Software Engineer specializing in cloud-native data platforms, MLOps, and distributed systems. I architect scalable data mesh platforms and build high-performance SDKs in Rust. Based in Tokyo, solving complex engineering challenges by day, exploring mountain trails and boxing rings by night.
+      - id: 2
+        locales:
+          en:
+            description: Bridging European engineering rigor with Japanese precision. I approach every project with intensity—whether automating data workflows, empowering teams with self-service platforms, or mastering new technologies. Let's build something exceptional.

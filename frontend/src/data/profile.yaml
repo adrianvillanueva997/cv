@@ -1,0 +1,29 @@
+name: Adrian Villanueva Martinez
+profilePictureUrl: images/pictures/avatar.jpg
+locales:
+  en:
+    credits: Adrian Villanueva Martinez
+    role: Senior Software Engineer
+contactOptions:
+  - id: address
+    faIcon: fa-regular fa-map
+    href: null
+    locales:
+      en:
+        value: Tokyo, Japan 🇯🇵 | Spanish Engineer
+        valueShort: Tokyo, Japan
+  - id: email
+    value: adrian.villanueva.martinez@outlook.com
+    valueShort: adrian.villanueva.martinez@outlook.com
+    faIcon: fa-regular fa-envelope
+    href: mailto:adrian.villanueva.martinez@outlook.com
+  - id: github
+    value: "@adrianvillanueva997"
+    valueShort: "@adrianvillanueva997"
+    faIcon: fa-brands fa-github
+    href: https://github.com/adrianvillanueva997
+  - id: linkedin
+    value: "@adrian-villanueva-martinez"
+    valueShort: "@adrian-villanueva-martinez"
+    faIcon: fa-brands fa-linkedin
+    href: https://www.linkedin.com/in/adrian-villanueva-martinez/

@@ -1,0 +1,46 @@
+articles:
+  - id: 1
+    component: ArticleTimeline
+    locales: {}
+    settings:
+      order_items_by: id
+      order_items_sort: desc
+    items:
+      - id: 1
+        dateStart:
+          year: 2015
+          month: 1
+        dateEnd:
+          year: 2020
+          month: 6
+        img: null
+        fallbackFaIcon: fa-solid fa-graduation-cap
+        fallbackFaIconColor: "#003366"
+        locales:
+          en:
+            title: Bachelor's in Computer Science
+            description: |
+              Specialized in embedded systems, machine learning, and distributed computing.
+              Strong academic record with international experience across Spain, Finland, and Switzerland.
+              Active in research and extracurricular technical communities.
+            province: Madrid
+            country: Spain
+            institution: Universidad Europea de Madrid
+            list:
+              title: "Academic Achievements & Projects:"
+              items:
+                - "<strong>Final Thesis: TinyML-Powered Video Surveillance System</strong> — Grade: 9.5/10. Designed self-hosted camera system using embedded systems with TinyML for on-device computer vision with professional cameras."
+                - "<strong>International IT Seminars</strong> — Haaga-Helia (Finland): Participated in advanced IT workshops. HES-SO Sion (Switzerland): VR development and Java programming workshops."
+                - "<strong>Research Project: Sentiment Analysis on Migration Topics</strong> — Analyzed social media data to extract sentiment patterns on migratory topics using NLP and data science techniques."
+                - "<strong>Active Member</strong> — Data Science Club & Videogames Development Club. Collaborative technical projects and knowledge sharing."
+            tags:
+              - TinyML
+              - Embedded Systems
+              - Computer Vision
+              - Machine Learning
+              - VR Development
+              - Sentiment Analysis
+              - NLP
+              - Python
+              - Java
+              - Research

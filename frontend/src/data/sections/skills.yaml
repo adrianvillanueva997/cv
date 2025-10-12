@@ -1,0 +1,385 @@
+articles:
+  - id: 1
+    component: ArticleSkills
+    locales:
+      en:
+        title: Programming Languages
+    settings:
+      order_items_by: id
+      order_items_sort: asc
+      max_items_per_line: 3
+      transparent_item_icon_background: true
+      small_icons: true
+      chart: null
+    items:
+      - id: 1
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-brands fa-python
+        fallbackFaIconColor: "#3776AB"
+        percentage: null
+        locales:
+          en:
+            title: Python
+            description: Primary language for data engineering, MLOps pipelines, and automation frameworks
+            level: null
+      - id: 2
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-gear
+        fallbackFaIconColor: "#CE412B"
+        percentage: null
+        locales:
+          en:
+            title: Rust
+            description: High-performance SDKs, CLI tools, and systems programming for production workloads
+            level: null
+      - id: 3
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-brands fa-js
+        fallbackFaIconColor: "#3178C6"
+        percentage: null
+        locales:
+          en:
+            title: TypeScript
+            description: Type-safe APIs, React applications, and Node.js backend services
+            level: null
+      - id: 4
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-database
+        fallbackFaIconColor: "#CC2927"
+        percentage: null
+        locales:
+          en:
+            title: SQL
+            description: Complex queries, database design, and performance optimization for large-scale systems
+            level: null
+      - id: 5
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-code
+        fallbackFaIconColor: "#00ADD8"
+        percentage: null
+        locales:
+          en:
+            title: Go
+            description: Microservices, concurrent systems, and cloud-native applications
+            level: null
+      - id: 6
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-brands fa-java
+        fallbackFaIconColor: "#007396"
+        percentage: null
+        locales:
+          en:
+            title: Java
+            description: Enterprise applications and backend systems with Spring ecosystem
+            level: null
+      - id: 7
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-terminal
+        fallbackFaIconColor: "#4EAA25"
+        percentage: null
+        locales:
+          en:
+            title: Bash
+            description: Automation scripts, CI/CD pipelines, and infrastructure management
+            level: null
+      - id: 8
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-c
+        fallbackFaIconColor: "#A8B9CC"
+        percentage: null
+        locales:
+          en:
+            title: C
+            description: Embedded systems and low-level programming for TinyML projects
+            level: null
+  - id: 2
+    component: ArticleSkills
+    locales:
+      en:
+        title: Cloud & Infrastructure
+    settings:
+      order_items_by: id
+      order_items_sort: asc
+      max_items_per_line: 3
+      transparent_item_icon_background: true
+      small_icons: true
+      chart: null
+    items:
+      - id: 1
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-brands fa-aws
+        fallbackFaIconColor: "#FF9900"
+        percentage: null
+        locales:
+          en:
+            title: AWS
+            description: EC2, S3, Lambda, EKS — Infrastructure as Code, cost optimization, and scalable architectures
+            level: null
+      - id: 2
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-brands fa-microsoft
+        fallbackFaIconColor: "#0078D4"
+        percentage: null
+        locales:
+          en:
+            title: Azure
+            description: AKS, Azure Functions, Blob Storage — Cloud-native solutions and enterprise integrations
+            level: null
+      - id: 3
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-brands fa-google
+        fallbackFaIconColor: "#4285F4"
+        percentage: null
+        locales:
+          en:
+            title: GCP
+            description: BigQuery, Cloud Run, GKE — Data analytics and containerized workloads
+            level: null
+      - id: 4
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-brands fa-docker
+        fallbackFaIconColor: "#2496ED"
+        percentage: null
+        locales:
+          en:
+            title: Docker
+            description: Container orchestration, multi-stage builds, and optimized production images
+            level: null
+      - id: 5
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-dharmachakra
+        fallbackFaIconColor: "#326CE5"
+        percentage: null
+        locales:
+          en:
+            title: Kubernetes
+            description: Production cluster management, GitOps, autoscaling, and multi-tenancy strategies
+            level: null
+      - id: 6
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-sitemap
+        fallbackFaIconColor: "#7B42BC"
+        percentage: null
+        locales:
+          en:
+            title: Terraform
+            description: Infrastructure as Code for multi-cloud deployments with modular, reusable configurations
+            level: null
+  - id: 3
+    component: ArticleSkills
+    locales:
+      en:
+        title: Data Engineering & MLOps
+    settings:
+      order_items_by: id
+      order_items_sort: asc
+      max_items_per_line: 3
+      transparent_item_icon_background: true
+      small_icons: true
+      chart: null
+    items:
+      - id: 1
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-fire
+        fallbackFaIconColor: "#FF3621"
+        percentage: null
+        locales:
+          en:
+            title: Databricks
+            description: Company-wide data mesh platforms, Spark optimization, and collaborative ML workflows
+            level: null
+      - id: 2
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-wind
+        fallbackFaIconColor: "#017CEE"
+        percentage: null
+        locales:
+          en:
+            title: Apache Airflow
+            description: Orchestrating complex DAGs, custom operators, and data quality monitoring
+            level: null
+      - id: 3
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-fire
+        fallbackFaIconColor: "#E25A1C"
+        percentage: null
+        locales:
+          en:
+            title: PySpark
+            description: Large-scale data processing, performance tuning, and distributed computing patterns
+            level: null
+      - id: 4
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-stream
+        fallbackFaIconColor: "#231F20"
+        percentage: null
+        locales:
+          en:
+            title: Apache Kafka
+            description: Event streaming, real-time data pipelines, and distributed message processing
+            level: null
+      - id: 5
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-chart-line
+        fallbackFaIconColor: "#0194E2"
+        percentage: null
+        locales:
+          en:
+            title: MLflow
+            description: ML experiment tracking, model registry, and production deployment workflows
+            level: null
+      - id: 6
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-brain
+        fallbackFaIconColor: "#76B900"
+        percentage: null
+        locales:
+          en:
+            title: TinyML
+            description: Edge AI and on-device machine learning for embedded systems with resource constraints
+            level: null
+  - id: 4
+    component: ArticleSkills
+    locales:
+      en:
+        title: Observability & DevOps
+    settings:
+      order_items_by: id
+      order_items_sort: asc
+      max_items_per_line: 3
+      transparent_item_icon_background: true
+      small_icons: true
+      chart: null
+    items:
+      - id: 1
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-brands fa-github
+        fallbackFaIconColor: "#2088FF"
+        percentage: null
+        locales:
+          en:
+            title: GitHub Actions
+            description: CI/CD automation, workflow orchestration, and custom actions for deployment pipelines
+            level: null
+      - id: 2
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-ship
+        fallbackFaIconColor: "#EF7B4D"
+        percentage: null
+        locales:
+          en:
+            title: ArgoCD
+            description: GitOps deployments, declarative configuration, and continuous delivery for Kubernetes
+            level: null
+      - id: 3
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-chart-area
+        fallbackFaIconColor: "#E6522C"
+        percentage: null
+        locales:
+          en:
+            title: Prometheus
+            description: Metrics collection, alerting rules, and time-series monitoring for distributed systems
+            level: null
+      - id: 4
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-chart-pie
+        fallbackFaIconColor: "#F46800"
+        percentage: null
+        locales:
+          en:
+            title: Grafana
+            description: Custom dashboards, data visualization, and real-time monitoring for infrastructure and applications
+            level: null
+      - id: 5
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-chart-bar
+        fallbackFaIconColor: "#F5A800"
+        percentage: null
+        locales:
+          en:
+            title: OpenTelemetry
+            description: Distributed tracing, metrics, and logs for observability in microservices architectures
+            level: null
+      - id: 6
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-gears
+        fallbackFaIconColor: "#D24939"
+        percentage: null
+        locales:
+          en:
+            title: Jenkins
+            description: Build automation, pipeline-as-code, and integration with enterprise toolchains
+            level: null
+  - id: 5
+    component: ArticleSkills
+    locales:
+      en:
+        title: Frameworks & Libraries
+    settings:
+      order_items_by: id
+      order_items_sort: asc
+      max_items_per_line: 3
+      transparent_item_icon_background: true
+      small_icons: true
+      chart: null
+    items:
+      - id: 1
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-solid fa-bolt
+        fallbackFaIconColor: "#009688"
+        percentage: null
+        locales:
+          en:
+            title: FastAPI
+            description: High-performance Python APIs with automatic documentation and async support
+            level: null
+      - id: 2
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-brands fa-react
+        fallbackFaIconColor: "#61DAFB"
+        percentage: null
+        locales:
+          en:
+            title: React
+            description: Modern frontend applications with hooks, context, and component-driven architecture
+            level: null
+      - id: 3
+        dateStart: null
+        img: null
+        fallbackFaIcon: fa-brands fa-vuejs
+        fallbackFaIconColor: "#42b883"
+        percentage: null
+        locales:
+          en:
+            title: Vue.js
+            description: Reactive web applications with composition API and modern tooling
+            level: null
