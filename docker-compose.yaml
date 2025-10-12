@@ -1,0 +1,27 @@
+services:
+  adrianvillanueva:
+    image: ghcr.io/adrianvillanueva997/cv:latest
+    networks:
+      - proxy
+    restart: unless-stopped
+    ports:
+      - 80
+    labels:
+      - traefik.enable=true
+      - traefik.http.middlewares.cv-redirect-https.redirectscheme.scheme=https
+      - traefik.http.middlewares.cv-redirect-https.redirectscheme.permanent=true
+      - traefik.http.routers.cv-http.middlewares=cv-redirect-https
+      - traefik.http.routers.cv-http.rule=Host(`resume.adrianvillanueva.com`)
+      - traefik.http.routers.cv-http.entrypoints=http
+      - traefik.http.routers.cv-https.rule=Host(`resume.adrianvillanueva.com`)
+      - traefik.http.routers.cv-https.tls.certresolver=letsencrypt
+      - traefik.http.routers.cv-https.tls=true
+      - traefik.http.routers.cv-https.entrypoints=https
+      - "traefik.http.services.cv.loadbalancer.server.port=80"
+      - traefik.docker.network=proxy
+
+networks:
+  proxy:
+    external: true
+  otlp:
+    external: true
