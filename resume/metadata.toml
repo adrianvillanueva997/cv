@@ -47,7 +47,16 @@ language = "en"
 
     # Decide if you want to inject keywords or not
     inject_keywords = true
-    injected_keywords_list = ["Software Engineer", "Data Engineer", "Python", "SQL", "Rust"]
+    injected_keywords_list = [
+        "Senior Software Engineer", "Data Engineer", "Platform Engineer", "MLOps",
+        "Python", "Rust", "Java", "Go", "TypeScript", "SQL",
+        "AWS", "Azure", "Databricks", "Kafka", "Terraform",
+        "Data Mesh", "Data Platform", "CI/CD", "Kubernetes",
+        "PySpark", "ETL", "Machine Learning", "MLflow",
+        "GitHub Actions", "ArgoCD", "Docker", "Apache Airflow",
+        "Data Quality", "OpenTelemetry", "Data Contracts",
+        "Self-Service Platform", "Cloud Architecture", "DevOps"
+    ]
 
 [personal]
     first_name = "Adrian"
