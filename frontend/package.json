@@ -11,23 +11,23 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "@fortawesome/fontawesome-free": "^6.4.0",
-    "@popperjs/core": "^2.11.7",
-    "bootstrap": "^5.2.3",
-    "chart.js": "^4.4.8",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
+    "chart.js": "^4.5.0",
     "emailjs": "^4.0.3",
     "gh-pages": "^6.3.0",
     "js-yaml": "^4.1.0",
     "primeicons": "^7.0.0",
-    "swiper": "^10.0.4",
-    "vue": "^3.2.47",
+    "swiper": "^10.3.1",
+    "vue": "^3.5.22",
     "vue-chartjs": "^5.3.2",
-    "vue-router": "^4.2.4"
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@rollup/plugin-yaml": "^4.1.2",
-    "@vitejs/plugin-vue": "^5.2.3",
-    "sass": "^1.62.1",
-    "vite": "^6.2.5"
+    "@vitejs/plugin-vue": "^5.2.4",
+    "sass": "^1.93.2",
+    "vite": "^6.3.6"
   }
 }

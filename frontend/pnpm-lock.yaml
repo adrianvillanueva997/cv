@@ -12,16 +12,16 @@ importers:
         specifier: ^4.4.1
         version: 4.4.1
       '@fortawesome/fontawesome-free':
-        specifier: ^6.4.0
+        specifier: ^6.7.2
         version: 6.7.2
       '@popperjs/core':
-        specifier: ^2.11.7
+        specifier: ^2.11.8
         version: 2.11.8
       bootstrap:
-        specifier: ^5.2.3
+        specifier: ^5.3.8
         version: 5.3.8(@popperjs/core@2.11.8)
       chart.js:
-        specifier: ^4.4.8
+        specifier: ^4.5.0
         version: 4.5.0
       emailjs:
         specifier: ^4.0.3
@@ -36,29 +36,29 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       swiper:
-        specifier: ^10.0.4
+        specifier: ^10.3.1
         version: 10.3.1
       vue:
-        specifier: ^3.2.47
+        specifier: ^3.5.22
         version: 3.5.22
       vue-chartjs:
         specifier: ^5.3.2
         version: 5.3.2(chart.js@4.5.0)(vue@3.5.22)
       vue-router:
-        specifier: ^4.2.4
+        specifier: ^4.5.1
         version: 4.5.1(vue@3.5.22)
     devDependencies:
       '@rollup/plugin-yaml':
         specifier: ^4.1.2
         version: 4.1.2(rollup@4.52.4)
       '@vitejs/plugin-vue':
-        specifier: ^5.2.3
+        specifier: ^5.2.4
         version: 5.2.4(vite@6.3.6(sass@1.93.2))(vue@3.5.22)
       sass:
-        specifier: ^1.62.1
+        specifier: ^1.93.2
         version: 1.93.2
       vite:
-        specifier: ^6.2.5
+        specifier: ^6.3.6
         version: 6.3.6(sass@1.93.2)
 
 packages:
