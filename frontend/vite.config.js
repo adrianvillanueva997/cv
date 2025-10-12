@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/vue-resume-template/',
+    base: '/',
     plugins: [
         vue(),
         yaml()
