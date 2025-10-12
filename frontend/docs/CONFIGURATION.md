@@ -83,13 +83,13 @@ Adding, removing or reordering the sections can be achieved by making modificati
 ```
 Each section entry comprises the following fields:
 
-| Field      | Description                                                                                                 |  
+| Field      | Description                                                                                                 |
 |------------|-------------------------------------------------------------------------------------------------------------|
 | id         | A unique identifier for the section.                                                                        |
 | categoryId | Specifies the category to which the section belongs (used for grouping sections in the mobile navigation).  |
-| jsonPath   | Path to the file containing the section's content.                                                          | 
+| jsonPath   | Path to the file containing the section's content.                                                          |
 | faIcon     | The FontAwesome icon for this section, used to customize its link in the navigation components.             |
-| type       | Specifies the section's layout style, which can be `centered`, `row`, or `column`.                          |                                                                   
+| type       | Specifies the section's layout style, which can be `centered`, `row`, or `column`.                          |
 
 The `locales` field can include the following entries:
 

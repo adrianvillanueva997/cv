@@ -98,7 +98,7 @@ const _onLanguageSelected = (language) => {
         setSelectedLanguageWithId(language.id)
         return
     }
-    
+
     setSpinnerEnabled(true, strings.value.getTranslation("changing_language", language, language))
     setTimeout(() => {
         setSelectedLanguageWithId(language.id)

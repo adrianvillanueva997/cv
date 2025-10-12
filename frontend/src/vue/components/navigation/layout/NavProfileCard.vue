@@ -88,7 +88,7 @@ h4.nav-profile-card-title {
     letter-spacing: 0.15rem;
     font-size: 1.25rem;
     text-align: center;
-    
+
     @media (max-height: 660px) {
         margin-top: 15px;
         font-size: 1.175rem;

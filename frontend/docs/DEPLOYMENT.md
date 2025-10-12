@@ -19,7 +19,7 @@ To compile your project for production, execute:
 
 ```
 npm run build
-``` 
+```
 
 This command triggers a series of processes that package your code, assets, and other necessary files, ultimately creating a production-ready version of your project. After running the command, you'll find the compiled files within the `dist` folder.
 
@@ -34,7 +34,7 @@ Follow these steps to deploy your portfolio to GitHub Pages:
 - **Enable GitHub Actions** in your repository settings:
     - Go to `Your Repo > Settings > Actions > General`.
     - Under **Actions permissions**, select **"Allow all actions and reusable workflows"**.
-    - Scroll down to **Workflow permissions** and enable **"Read and write permissions"**.  
+    - Scroll down to **Workflow permissions** and enable **"Read and write permissions"**.
       ⚠️ *If this step is skipped, the deployment script will fail after the build stage.*
 - Once everything is configured, **push a commit** to your repository to trigger the deployment script automatically.
 - If the deployment doesn't start automatically:
@@ -49,5 +49,5 @@ Follow these steps to deploy your portfolio to GitHub Pages:
 - Now go to `Your Repo > Settings > Pages`, and:
     - Set the **source branch** to `gh-pages`
     - Save the changes
-- Wait a few seconds for GitHub to process the deployment.  
+- Wait a few seconds for GitHub to process the deployment.
   You should then see the deployment status and a link to your live portfolio in the **"Deployments"** section on the right side of your repository homepage.

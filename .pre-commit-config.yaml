@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v6.0.0
     hooks:
       - id: check-yaml
         name: ⚙️ Check YAML
@@ -20,7 +20,8 @@ repos:
         name: ⚙️ Detect private key
       - id: debug-statements
         name: "⚙️ Check debug statements"
-  - repo: https://github.com/Enter-tainer/typstyle
-    rev: "v0.11.32" # The the revision or tag you want to use
+  - repo: https://github.com/oxipng/oxipng
+    rev: v9.1.5
     hooks:
-      - id: typstyle
+      - id: oxipng
+        args: ["-o", "4", "--strip", "safe", "--alpha"]

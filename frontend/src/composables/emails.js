@@ -24,10 +24,10 @@ export const useEmails = () => {
         _params.publicKey = publicKey
         _params.serviceId = serviceId
         _params.templateId = templateId
-        
+
         if(!publicKey || !serviceId || !templateId)
             throw new Error("Error initializing emails.js! Make sure you informed all parameters correctly.")
-        
+
         emailjs.init(_params.publicKey)
     }
 
@@ -41,7 +41,7 @@ export const useEmails = () => {
     const sendContact = async (fromName, fromEmail, customSubject, message) => {
         if(!_params.serviceId || !_params.templateId)
             throw new Error("EmailJS hasn't been initialized!")
-        
+
         const requestParams = {
             name: fromName,
             from_name: fromName,
