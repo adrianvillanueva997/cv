@@ -1,26 +1,6 @@
-# Multi-stage Dockerfile to build resume PDF and Vue site
+# Multi-stage Dockerfile to build Vue site with locally compiled CV
 
-# Stage 1: Build the resume PDF using Typst
-FROM ghcr.io/typst/typst:v0.13.1 AS resume-builder
-
-
-# Install fontconfig to manage fonts
-RUN apk add --no-cache fontconfig
-
-WORKDIR /resume
-
-# Copy resume files
-COPY resume/ .
-
-# Install custom fonts to system fonts directory
-RUN mkdir -p /usr/share/fonts/truetype/custom && \
-    cp fonts/*.otf /usr/share/fonts/truetype/custom/ && \
-    fc-cache -fv
-
-# Compile the resume
-RUN typst compile cv.typ cv.pdf
-
-# Stage 2: Build Vue frontend
+# Stage 1: Build Vue frontend
 FROM node:20-alpine AS frontend-builder
 
 WORKDIR /app
@@ -35,8 +15,8 @@ RUN npm install -g pnpm && \
 # Copy frontend source code
 COPY frontend/ .
 
-# Copy the resume PDF from resume-builder stage
-COPY --from=resume-builder /resume/cv.pdf ./public/resume.pdf
+# Copy the locally compiled resume PDF
+COPY resume/cv.pdf ./public/resume.pdf
 
 # Build the Vue application
 RUN pnpm run build
