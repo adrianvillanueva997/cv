@@ -1,5 +1,5 @@
 // Imports
-#import "@preview/brilliant-cv:2.0.2": cvSection, cvEntry
+#import "@preview/brilliant-cv:2.0.6": cvSection, cvEntry
 #let metadata = toml("../metadata.toml")
 #let cvSection = cvSection.with(metadata: metadata)
 #let cvEntry = cvEntry.with(metadata: metadata)
@@ -9,6 +9,7 @@
 
 #cvEntry(
   title: [Data Engineer],
+  logo: image("../src/logos/woven_by_toyota.jpg"),
   society: [Woven by Toyota],
   date: [2024 - Present],
   location: [Tokyo, Japan],
@@ -38,9 +39,11 @@
     "Self-Service",
   ),
 )
+
 #cvEntry(
   title: [Data Engineer],
-  society: [Ahold Delhaize],
+  society: [Albert Heijn],
+  logo: image("../src/logos/albert_heijn.png"),
   date: [2022 - 2024],
   location: [Amsterdam, Netherlands],
   description: list(
@@ -66,6 +69,7 @@
   title: [Data Engineer],
   society: [Dashmote],
   date: [2021 - 2022],
+  logo: image("../src/logos/dashmote.png"),
   location: [Amsterdam, Netherlands],
   description: list(
     [Led AWS-based infrastructure migration using Terraform, reducing manual provisioning and enabling reproducible environments],
@@ -88,6 +92,7 @@
 #cvEntry(
   title: [Software Engineer],
   society: [Ernst & Young (EY)],
+  logo: image("../src/logos/ey.png"),
   date: [2019 - 2020],
   location: [Madrid, Spain],
   description: list(

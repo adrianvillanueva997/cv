@@ -3,10 +3,24 @@
 # Stage 1: Build the resume PDF using Typst
 FROM ghcr.io/typst/typst:v0.13.1 AS resume-builder
 
+# Switch to root to install packages and fonts
+USER root
+
+# Install fontconfig to manage fonts
+RUN apk add --no-cache fontconfig
+
 WORKDIR /resume
 
 # Copy resume files
 COPY resume/ .
+
+# Install custom fonts to system fonts directory
+RUN mkdir -p /usr/share/fonts/truetype/custom && \
+    cp fonts/*.otf /usr/share/fonts/truetype/custom/ && \
+    fc-cache -fv
+
+# Switch back to typst user if it exists
+USER typst
 
 # Compile the resume
 RUN typst compile cv.typ cv.pdf

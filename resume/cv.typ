@@ -1,5 +1,5 @@
 // Imports
-#import "@preview/brilliant-cv:2.0.2": cv
+#import "@preview/brilliant-cv:2.0.6": cv
 #let metadata = toml("./metadata.toml")
 #let importModules(modules, lang: metadata.language) = {
   for module in modules {
@@ -10,11 +10,16 @@
 }
 
 
-#show: cv.with(metadata)
+#show: cv.with(
+  metadata,
+  profilePhoto: image("./src/avatar.png"),
+)
 #importModules((
   "skills",
+  "education",
   "professional",
-   "education",
   // "projects",
   // "certificates",
+  // "publications",
+
 ))

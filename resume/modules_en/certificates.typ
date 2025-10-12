@@ -1,5 +1,5 @@
 // Imports
-#import "@preview/brilliant-cv:2.0.2": cvSection, cvHonor
+#import "@preview/brilliant-cv:2.0.6": cvSection, cvHonor
 #let metadata = toml("../metadata.toml")
 #let cvSection = cvSection.with(metadata: metadata)
 #let cvHonor = cvHonor.with(metadata: metadata)
@@ -17,4 +17,10 @@
   date: [2017],
   title: [Applied Data Science with Python],
   issuer: [Coursera],
+)
+
+#cvHonor(
+  date: [],
+  title: [SQL Fundamentals Track],
+  issuer: [Datacamp],
 )
