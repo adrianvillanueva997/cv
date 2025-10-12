@@ -1,0 +1,187 @@
+/** Headings **/
+$headings-base-sizes: (
+    h1: (font-size: 2.75rem),
+    h2: (font-size: 2.5rem),
+    h3: (font-size: 2rem),
+    h4: (font-size: 1.5rem),
+    h5: (font-size: 1.3rem),
+    h6: (font-size: 1.1rem)
+);
+
+@each $heading, $size in $headings-base-sizes {
+
+    #{$heading},
+    .eq-#{$heading} {
+        @include generate-dynamic-styles-with-multipliers($size, $headings-breakpoint-multipliers);
+        font-weight: 700;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+// Extra bold headings
+h1,
+.eq-h1 {
+    font-weight: 800;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+h2,
+.eq-h2 {
+    font-weight: 800;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+/** Custom Headings **/
+$custom-headings-base-sizes: (
+    lead-2: (font-size: 1.4rem),
+    lead: (font-size: 1.2rem),
+    display-1: (font-size: 3rem),
+);
+
+@each $heading, $size in $custom-headings-base-sizes {
+    .#{$heading} {
+        @include generate-dynamic-styles-with-multipliers($size, $headings-breakpoint-multipliers);
+    }
+}
+
+/** Texts **/
+$texts-base-sizes: (
+    text-1: (font-size: 0.85rem),
+    text-2: (font-size: 0.9rem),
+    text-3: (font-size: 0.95rem),
+    text-4: (font-size: 1.0rem),
+    text-5: (font-size: 1.05rem),
+);
+
+@each $text, $size in $texts-base-sizes {
+    .#{$text} {
+        @include generate-dynamic-styles-with-multipliers($size, $texts-breakpoint-multipliers);
+    }
+}
+
+.text {
+    &-muted {
+        color: $text-muted !important;
+    }
+
+    &-default {
+        color: $text-default-color !important;
+    }
+
+    @for $i from 1 through length($light-shades-palette) {
+        &-light-#{$i} {
+            color: nth($light-shades-palette, $i) !important;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: lighten($primary, 20%);
+
+    &:hover {
+        color: lighten($primary, 15%);
+    }
+
+    &.link-darkened {
+        color: $primary;
+
+        &:hover {
+            color: lighten($primary, 5%);
+        }
+    }
+
+    &.link-masked {
+        color: $light-7;
+
+        &:hover {
+            color: lighten($primary, 5%);
+        }
+    }
+
+    &.link-disabled {
+        color: $text-default-color;
+        opacity: 0.9;
+        pointer-events: none;
+    }
+}
+
+p {
+    font-family: $font-family-base;
+}
+
+/** Monospace / Code Styling **/
+.text-mono,
+.font-mono,
+code,
+kbd,
+pre,
+samp {
+    font-family: $font-family-monospace;
+    letter-spacing: -0.02em;
+}
+
+/** Gradient Text **/
+.text-gradient {
+    background: linear-gradient(135deg, $primary 0%, lighten($primary, 15%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient-red {
+    background: linear-gradient(135deg, #ff4757 0%, #ff6b81 50%, #ff4757 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient-accent {
+    background: linear-gradient(135deg, $primary 0%, $success 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/** Text Shadows **/
+.text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.text-shadow-lg {
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.text-shadow-glow {
+    text-shadow: 0 0 10px rgba($primary, 0.5);
+}
+
+.text-shadow-glow-strong {
+    text-shadow: 0 0 20px rgba($primary, 0.8);
+}
+
+/** Font Weight Utilities **/
+.font-weight-semibold {
+    font-weight: 600;
+}
+
+.font-weight-extrabold {
+    font-weight: 800;
+}
+
+/** Letter Spacing **/
+.letter-spacing-tight {
+    letter-spacing: -0.02em;
+}
+
+.letter-spacing-wide {
+    letter-spacing: 0.05em;
+}
+
+.letter-spacing-wider {
+    letter-spacing: 0.1em;
+}

@@ -1,0 +1,135 @@
+articles:
+  - id: 1
+    component: ArticleTimeline
+    locales: {}
+    settings:
+      order_items_by: id
+      order_items_sort: desc
+    items:
+      - id: 4
+        dateStart:
+          year: 2024
+          month: 8
+        dateEnd:
+          string: now
+        img: null
+        fallbackFaIcon: fa-solid fa-car
+        fallbackFaIconColor: "#d4002d"
+        locales:
+          en:
+            title: Data Engineer
+            description: Building a scalable, cloud-native data mesh platform on <strong>AWS and Databricks</strong>, adopted company-wide to enable governed, high-quality data sharing across domains. Tackling complex distributed systems challenges with precision and focus.
+            list:
+              title: Key Achievements
+              items:
+                - Developed a multi-language <strong>Kafka ingestion SDK</strong> (Rust core with Python, Java, TypeScript, and Go bindings), deployed org-wide for real-time ingestion
+                - Designed and implemented <strong>CI/CD pipelines</strong> for ML and data workflows in Databricks, integrating deployment and lifecycle tracking with MLflow
+                - Improved platform resilience through automated data reconciliation, <strong>OpenTelemetry instrumentation</strong>, and enforcement of data contracts
+                - Led development of self-service capabilities, including automated provisioning of Kafka topics, access control groups, and data product registration
+                - Created platform documentation, naming conventions, and onboarding guides to support <strong>self-serve adoption</strong>
+            province: Tokyo
+            country: Japan
+            institution: Woven by Toyota
+            tags:
+              - AWS
+              - Databricks
+              - Rust
+              - Python
+              - Kafka
+              - MLflow
+              - OpenTelemetry
+              - Terraform
+      - id: 3
+        dateStart:
+          year: 2022
+          month: 3
+        dateEnd:
+          year: 2024
+          month: 6
+        img: null
+        fallbackFaIcon: fa-solid fa-shopping-cart
+        fallbackFaIconColor: "#0066cc"
+        locales:
+          en:
+            title: Data Platform Engineer
+            description: Managed a company-wide data platform built on <strong>Azure and Databricks</strong>, supporting large-scale batch and real-time pipelines.
+            list:
+              title: Key Achievements
+              items:
+                - Built reusable <strong>Terraform modules</strong> and automated infrastructure provisioning to reduce deployment time and enforce compliance
+                - Created observability tooling using <strong>Python and Kusto</strong> to ensure data quality and regulatory compliance across data products
+                - Implemented <strong>CI/CD with GitHub Actions and ArgoCD</strong>, automating deployment of services and pipelines to Kubernetes clusters
+                - Worked closely with analysts and data scientists to productionize <strong>ML pipelines</strong> and deploy feature engineering workflows
+            province: Amsterdam
+            country: Netherlands
+            institution: Albert Heijn
+            tags:
+              - Azure
+              - Databricks
+              - Terraform
+              - Python
+              - Kubernetes
+              - GitHub Actions
+              - ArgoCD
+              - Kusto
+      - id: 2
+        dateStart:
+          year: 2021
+          month: 9
+        dateEnd:
+          year: 2022
+          month: 3
+        img: null
+        fallbackFaIcon: fa-solid fa-database
+        fallbackFaIconColor: "#2c3e50"
+        locales:
+          en:
+            title: Data Engineer
+            description: Migrated legacy Airflow pipelines to <strong>PySpark</strong> for scalable data processing and analytics workflows.
+            list:
+              title: Key Achievements
+              items:
+                - Optimized <strong>Docker builds</strong> and CI pipelines to cut build time and reduce cloud costs by applying multi-stage techniques
+                - Designed and deployed a governed <strong>data lake on S3</strong> with robust schema management and access controls
+                - Collaborated with data scientists to automate training data pipelines and streamline <strong>model experimentation</strong>
+            province: Amsterdam
+            country: Netherlands
+            institution: Dashmote
+            tags:
+              - PySpark
+              - Airflow
+              - Docker
+              - AWS S3
+              - Python
+              - ML Pipelines
+      - id: 1
+        dateStart:
+          year: 2019
+          month: 6
+        dateEnd:
+          year: 2020
+          month: 6
+        img: null
+        fallbackFaIcon: fa-solid fa-chart-line
+        fallbackFaIconColor: "#ffe600"
+        locales:
+          en:
+            title: Software Developer (Faas Tech)
+            description: Built <strong>ETL pipelines</strong> in Python, SQL, and Java to automate financial reporting workflows across global client accounts.
+            list:
+              title: Key Achievements
+              items:
+                - Trained and deployed <strong>ML models</strong> for forecasting and risk scoring in regulated environments
+                - Built and deployed full-stack <strong>data visualization tools</strong> on Linux for internal analytics teams
+                - Participated in project planning with clients, translating business goals into deliverable <strong>data products</strong>
+            province: Madrid
+            country: Spain
+            institution: Ernst & Young (EY)
+            tags:
+              - Python
+              - SQL
+              - Java
+              - ETL
+              - Machine Learning
+              - Linux
+              - Financial Tech
