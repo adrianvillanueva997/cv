@@ -42,7 +42,7 @@ COPY --from=resume-builder /resume/cv.pdf ./public/resume.pdf
 RUN pnpm run build
 
 # Stage 3: Production image with nginx
-FROM nginx:1.25-alpine AS production
+FROM nginx:1.29-alpine AS production
 
 # Copy built assets from frontend-builder
 COPY --from=frontend-builder /app/dist /usr/share/nginx/html
