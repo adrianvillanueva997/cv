@@ -2,5 +2,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
-  ]
+  ],
+  "packageRules": [
+    {
+      "groupName": "all dependencies",
+      "groupSlug": "all",
+      "matchPackagePatterns": ["*"],
+      "schedule": ["before 4am on monday"]
+    }
+  ],
+  "prConcurrentLimit": 1,
+  "prHourlyLimit": 2
 }
