@@ -14,6 +14,7 @@ services:
       - traefik.http.routers.cv-http.rule=Host(`resume.adrianvillanueva.com`)
       - traefik.http.routers.cv-http.entrypoints=http
       - traefik.http.routers.cv-https.rule=Host(`resume.adrianvillanueva.com`)
+      - traefik.http.routers.cv-https.middlewares=error-pages-middleware
       - traefik.http.routers.cv-https.tls.certresolver=letsencrypt
       - traefik.http.routers.cv-https.tls=true
       - traefik.http.routers.cv-https.entrypoints=https
