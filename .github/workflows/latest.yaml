@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+    paths:
+      - resume/**
+      - frontend/**
+      - Dockerfile
+      - nginx.conf
 
 env:
   REGISTRY: ghcr.io
