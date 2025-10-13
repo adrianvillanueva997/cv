@@ -1,8 +1,4 @@
-/**
- * Created by Ryan Balieiro on 08.26.2023
- * This composable will implement helper functions that can be used by multiple components within the architecture.
- */
-import {useConstants} from "/src/composables/constants.js"
+import { useConstants } from "/src/composables/constants.js"
 
 const constants = useConstants()
 
@@ -14,7 +10,7 @@ export function useUtils() {
      * @return {number}
      */
     const clamp = (value, min, max) => {
-        if(isNaN(Number(value)) || value === null || value === undefined)
+        if (isNaN(Number(value)) || value === null || value === undefined)
             return min
 
         return Math.min(Math.max(value, min), max)
