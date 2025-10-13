@@ -10,7 +10,7 @@ export function useUtils() {
      * @return {number}
      */
     const clamp = (value, min, max) => {
-        if (Number.isNaN || value === null || value === undefined)
+        if (Number.isNaN(Number(value)) || value === null || value === undefined)
             return min
 
         return Math.min(Math.max(value, min), max)
