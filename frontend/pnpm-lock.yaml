@@ -22,7 +22,7 @@ importers:
         version: 5.3.8(@popperjs/core@2.11.8)
       chart.js:
         specifier: ^4.5.0
-        version: 4.5.0
+        version: 4.5.1
       emailjs:
         specifier: ^4.0.3
         version: 4.0.3
@@ -43,7 +43,7 @@ importers:
         version: 3.5.22
       vue-chartjs:
         specifier: ^5.3.2
-        version: 5.3.2(chart.js@4.5.0)(vue@3.5.22)
+        version: 5.3.2(chart.js@4.5.1)(vue@3.5.22)
       vue-router:
         specifier: ^4.5.1
         version: 4.5.1(vue@3.5.22)
@@ -690,8 +690,8 @@ packages:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
     engines: {node: '>=8'}
 
-  chart.js@4.5.0:
-    resolution: {integrity: sha512-aYeC/jDgSEx8SHWZvANYMioYMZ2KX02W6f6uVfyteuCGcadDLcYVHdfdygsTQkQ4TKn5lghoojAsPj5pu0SnvQ==}
+  chart.js@4.5.1:
+    resolution: {integrity: sha512-GIjfiT9dbmHRiYi6Nl2yFCq7kkwdkp1W/lp2J99rX0yo9tgJGn3lKQATztIjb5tVtevcBtIdICNWqlq5+E8/Pw==}
     engines: {pnpm: '>=8'}
 
   chokidar@4.0.3:
@@ -1553,7 +1553,7 @@ snapshots:
     dependencies:
       fill-range: 7.1.1
 
-  chart.js@4.5.0:
+  chart.js@4.5.1:
     dependencies:
       '@kurkle/color': 0.3.4
 
@@ -1969,9 +1969,9 @@ snapshots:
       fsevents: 2.3.3
       sass: 1.93.2
 
-  vue-chartjs@5.3.2(chart.js@4.5.0)(vue@3.5.22):
+  vue-chartjs@5.3.2(chart.js@4.5.1)(vue@3.5.22):
     dependencies:
-      chart.js: 4.5.0
+      chart.js: 4.5.1
       vue: 3.5.22
 
   vue-router@4.5.1(vue@3.5.22):
