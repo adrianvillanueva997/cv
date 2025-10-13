@@ -21,7 +21,7 @@ RUN mkdir -p /usr/share/fonts/truetype/custom && \
 RUN typst compile cv.typ cv.pdf
 
 # Stage 2: Build Vue frontend
-FROM node:20-alpine AS frontend-builder
+FROM node:22-alpine AS frontend-builder
 
 WORKDIR /app
 
