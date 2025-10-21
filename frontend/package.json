@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "postinstall": "mkdir -p public/webfonts && cp node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2 public/webfonts/ || true"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
