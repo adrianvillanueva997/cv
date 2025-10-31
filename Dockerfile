@@ -1,7 +1,7 @@
 # Multi-stage Dockerfile to build resume PDF and Vue site
 
 # Stage 1: Build the resume PDF using Typst
-FROM ghcr.io/typst/typst:v0.13.1 AS resume-builder
+FROM ghcr.io/typst/typst:0.14.0 AS resume-builder
 
 
 # Install fontconfig to manage fonts
