@@ -31,7 +31,7 @@ importers:
         version: 6.3.0
       js-yaml:
         specifier: ^4.1.0
-        version: 4.1.0
+        version: 4.1.1
       primeicons:
         specifier: ^7.0.0
         version: 7.0.0
@@ -865,8 +865,8 @@ packages:
     resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
     engines: {node: '>=0.12.0'}
 
-  js-yaml@4.1.0:
-    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+  js-yaml@4.1.1:
+    resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
     hasBin: true
 
   jsonfile@6.2.0:
@@ -1392,7 +1392,7 @@ snapshots:
   '@rollup/plugin-yaml@4.1.2(rollup@4.52.5)':
     dependencies:
       '@rollup/pluginutils': 5.3.0(rollup@4.52.5)
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       tosource: 2.0.0-alpha.3
     optionalDependencies:
       rollup: 4.52.5
@@ -1744,7 +1744,7 @@ snapshots:
 
   is-number@7.0.0: {}
 
-  js-yaml@4.1.0:
+  js-yaml@4.1.1:
     dependencies:
       argparse: 2.0.1
 
