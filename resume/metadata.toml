@@ -40,6 +40,8 @@ language = "en"
 
         # Decide if you want to display organisation logo or not
         display_logo = true
+[layout.footer]
+display_page_counter = true 
 
 [inject]
     # Decide if you want to inject AI prompt or not
@@ -57,7 +59,6 @@ language = "en"
         "Data Quality", "OpenTelemetry", "Data Contracts",
         "Self-Service Platform", "Cloud Architecture", "DevOps"
     ]
-
 [personal]
     first_name = "Adrian"
     last_name = "Villanueva Martinez"
