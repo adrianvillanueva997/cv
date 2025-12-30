@@ -16,7 +16,7 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.8",
     "chart.js": "^4.5.0",
-    "emailjs": "^4.0.3",
+    "emailjs": "^5.0.0",
     "gh-pages": "^6.3.0",
     "js-yaml": "^4.1.0",
     "primeicons": "^7.0.0",
