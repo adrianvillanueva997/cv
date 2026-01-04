@@ -1,0 +1,484 @@
+/**
+ * Text Contrast & Readability Enhancement
+ * Ensures all text is clearly visible with proper contrast
+ */
+
+@import "variables";
+
+// ==================== UNIVERSAL TEXT COLOR OVERRIDE ====================
+* {
+    color: #f0f2f5 !important;
+}
+
+// Override specific elements to ensure visibility
+html, body {
+    color: #f0f2f5 !important;
+}
+
+// All text elements
+p, span, div, li, td, th, label, button, a, small, code, pre, blockquote {
+    color: #f0f2f5 !important;
+}
+
+// Form elements
+input, textarea, select, .form-control, .form-label, .form-text {
+    color: #f0f2f5 !important;
+}
+
+.form-label {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+input::placeholder,
+textarea::placeholder,
+.form-control::placeholder {
+    color: rgba(240, 242, 245, 0.6) !important;
+    opacity: 1 !important;
+}
+
+// ==================== HEADING CONTRAST ====================
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.3px !important;
+}
+
+h1, .h1 {
+    font-size: 2.75rem !important;
+    letter-spacing: -0.5px !important;
+}
+
+h2, .h2 {
+    font-size: 2.5rem !important;
+    letter-spacing: -0.4px !important;
+}
+
+h3, .h3 {
+    font-size: 2rem !important;
+    letter-spacing: -0.3px !important;
+}
+
+h4, .h4 {
+    font-size: 1.5rem !important;
+}
+
+h5, .h5 {
+    font-size: 1.3rem !important;
+}
+
+h6, .h6 {
+    font-size: 1.1rem !important;
+}
+
+// ==================== SECONDARY TEXT ====================
+.text-muted,
+.text-secondary,
+small,
+.small {
+    color: #c8cdd2 !important;
+}
+
+.text-light-2,
+.text-light-3,
+.text-light-4,
+.text-light-5,
+.text-light-6 {
+    color: #b8bcc2 !important;
+}
+
+// ==================== STRONG & EMPHASIS ====================
+strong,
+b,
+.font-weight-bold,
+.fw-bold {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+em,
+i,
+.font-italic,
+.fst-italic {
+    color: #f0f2f5 !important;
+    font-style: italic !important;
+}
+
+// ==================== LINKS ====================
+a {
+    color: #06d6a0 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    font-weight: 500 !important;
+
+    &:hover {
+        color: #00d9ff !important;
+        text-decoration: underline !important;
+    }
+
+    &:visited {
+        color: #06d6a0 !important;
+    }
+
+    &:focus {
+        outline: 2px solid #06d6a0 !important;
+        outline-offset: 2px !important;
+    }
+}
+
+// ==================== LIST ITEMS ====================
+ul, ol {
+    color: #f0f2f5 !important;
+
+    li {
+        color: #f0f2f5 !important;
+        margin-bottom: 0.5rem !important;
+    }
+}
+
+// ==================== TABLE TEXT ====================
+table {
+    thead {
+        th {
+            color: #ffffff !important;
+            background-color: rgba(6, 214, 160, 0.1) !important;
+            font-weight: 700 !important;
+        }
+    }
+
+    tbody {
+        td {
+            color: #f0f2f5 !important;
+        }
+    }
+}
+
+// ==================== FORM LABELS ====================
+label,
+.form-label {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.form-label-required::after {
+    content: ' *' !important;
+    color: #ff6b6b !important;
+    font-weight: 700 !important;
+}
+
+// ==================== PLACEHOLDER TEXT ====================
+::placeholder {
+    color: #a0a0a0 !important;
+    opacity: 1 !important;
+}
+
+::-webkit-input-placeholder {
+    color: #a0a0a0 !important;
+}
+
+::-moz-placeholder {
+    color: #a0a0a0 !important;
+}
+
+:-ms-input-placeholder {
+    color: #a0a0a0 !important;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+    color: #a0a0a0 !important;
+}
+
+// ==================== CARD TEXT ====================
+.card {
+    color: #f0f2f5 !important;
+
+    .card-header {
+        color: #ffffff !important;
+        font-weight: 700 !important;
+        background-color: rgba(6, 214, 160, 0.08) !important;
+        border-bottom: 1px solid rgba(6, 214, 160, 0.2) !important;
+    }
+
+    .card-title {
+        color: #ffffff !important;
+        font-weight: 700 !important;
+    }
+
+    .card-subtitle {
+        color: #c8cdd2 !important;
+    }
+
+    .card-text {
+        color: #f0f2f5 !important;
+    }
+}
+
+// ==================== BUTTON TEXT ====================
+.btn {
+    font-weight: 600 !important;
+
+    &.btn-primary,
+    &.btn-success,
+    &.btn-danger,
+    &.btn-warning,
+    &.btn-info {
+        color: #ffffff !important;
+    }
+
+    &.btn-light,
+    &.btn-secondary {
+        color: #0f1419 !important;
+    }
+}
+
+// ==================== BADGE TEXT ====================
+.badge {
+    font-weight: 600 !important;
+    color: #ffffff !important;
+}
+
+// ==================== ALERT TEXT ====================
+.alert {
+    color: #f0f2f5 !important;
+
+    .alert-heading {
+        color: #ffffff !important;
+        font-weight: 700 !important;
+    }
+
+    a {
+        color: inherit !important;
+        text-decoration: underline !important;
+        font-weight: 600 !important;
+    }
+}
+
+// ==================== BREADCRUMB TEXT ====================
+.breadcrumb {
+    color: #f0f2f5 !important;
+
+    .breadcrumb-item {
+        color: #f0f2f5 !important;
+
+        &.active {
+            color: #06d6a0 !important;
+            font-weight: 600 !important;
+        }
+    }
+
+    a {
+        color: #06d6a0 !important;
+    }
+}
+
+// ==================== TOOLTIP TEXT ====================
+.tooltip-inner {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+}
+
+// ==================== CODE & MONOSPACE ====================
+code,
+pre,
+kbd,
+samp,
+.code {
+    color: #06d6a0 !important;
+    background-color: rgba(6, 214, 160, 0.08) !important;
+    padding: 0.25rem 0.5rem !important;
+    border-radius: 4px !important;
+    font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+    font-size: 0.9em !important;
+}
+
+pre {
+    color: #f0f2f5 !important;
+    background-color: rgba(15, 20, 25, 0.8) !important;
+    border: 1px solid rgba(6, 214, 160, 0.2) !important;
+    padding: 1rem !important;
+    overflow-x: auto !important;
+
+    code {
+        color: #06d6a0 !important;
+        background-color: transparent !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+    }
+}
+
+// ==================== CUSTOM TEXT UTILITY CLASSES ====================
+.text-bright {
+    color: #ffffff !important;
+}
+
+.text-primary-light {
+    color: #06d6a0 !important;
+}
+
+.text-secondary-light {
+    color: #00d9ff !important;
+}
+
+.text-accent {
+    color: #ff9a3d !important;
+}
+
+.text-shadow-soft {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.text-shadow-medium {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+.text-shadow-strong {
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+// ==================== READABLE BACKGROUNDS FOR TEXT ====================
+.text-bg-dark {
+    background-color: rgba(10, 14, 20, 0.6) !important;
+    padding: 0.25rem 0.5rem !important;
+    border-radius: 4px !important;
+}
+
+.text-bg-glass {
+    background: rgba(15, 20, 25, 0.4) !important;
+    backdrop-filter: blur(10px) !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+// ==================== OPACITY FIXES ====================
+.opacity-50 {
+    opacity: 0.7 !important;
+    color: #f0f2f5 !important;
+}
+
+.opacity-75 {
+    opacity: 0.85 !important;
+    color: #f0f2f5 !important;
+}
+
+// ==================== SECTION/COMPONENT SPECIFIC ====================
+.resume-section-header {
+    h1, .title {
+        color: #ffffff !important;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    p, .lead {
+        color: #c8cdd2 !important;
+    }
+}
+
+.nav-sidebar-link {
+    color: #c8cdd2 !important;
+    transition: all 0.3s ease !important;
+
+    &:hover {
+        color: #06d6a0 !important;
+    }
+
+    &.active {
+        color: #ffffff !important;
+        font-weight: 600 !important;
+    }
+}
+
+// ==================== GRADIENT TEXT ====================
+.text-gradient {
+    background: linear-gradient(135deg, #06d6a0 0%, #00d9ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @supports not (-webkit-text-fill-color: transparent) {
+        color: #06d6a0;
+    }
+}
+
+.text-gradient-warm {
+    background: linear-gradient(90deg, #ff9a3d 0%, #06d6a0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @supports not (-webkit-text-fill-color: transparent) {
+        color: #ff9a3d;
+    }
+}
+
+// ==================== HIGHLIGHTED TEXT ====================
+mark,
+.mark {
+    background-color: rgba(255, 154, 61, 0.25) !important;
+    color: #ffffff !important;
+    padding: 0.1rem 0.3rem !important;
+    border-radius: 3px !important;
+}
+
+// ==================== SELECTION ====================
+::selection {
+    background-color: rgba(6, 214, 160, 0.3) !important;
+    color: #ffffff !important;
+}
+
+::-moz-selection {
+    background-color: rgba(6, 214, 160, 0.3) !important;
+    color: #ffffff !important;
+}
+
+// ==================== RESPONSIVE TEXT ADJUSTMENTS ====================
+@include media-breakpoint-down(lg) {
+    h1, .h1 { font-size: 2.25rem !important; }
+    h2, .h2 { font-size: 2rem !important; }
+    h3, .h3 { font-size: 1.75rem !important; }
+}
+
+@include media-breakpoint-down(md) {
+    h1, .h1 { font-size: 1.75rem !important; }
+    h2, .h2 { font-size: 1.5rem !important; }
+    h3, .h3 { font-size: 1.25rem !important; }
+    body { font-size: 0.95rem !important; }
+}
+
+// ==================== ACCESSIBILITY ====================
+@media (prefers-color-scheme: dark) {
+    body,
+    body * {
+        color: #f0f2f5 !important;
+    }
+}
+
+@media (prefers-contrast: more) {
+    body,
+    body * {
+        color: #ffffff !important;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #ffffff !important;
+        font-weight: 800 !important;
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5) !important;
+    }
+}
+
+// ==================== FOCUS STYLES ====================
+:focus,
+:focus-visible {
+    outline: 2px solid #06d6a0 !important;
+    outline-offset: 2px !important;
+}
+
+// Remove default outline if custom focus style is provided
+*:focus:not(:focus-visible) {
+    outline: 2px solid #06d6a0 !important;
+}

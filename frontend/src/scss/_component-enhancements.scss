@@ -1,0 +1,589 @@
+/**
+ * Component Enhancements - Premium Presentation System
+ * High-specificity overrides for Bootstrap components
+ */
+
+@import "variables";
+
+// ==================== BOOTSTRAP BUTTON OVERRIDES ====================
+.btn-primary {
+    background: linear-gradient(135deg, #06d6a0 0%, #00d9ff 100%) !important;
+    border: none !important;
+    color: #0a0e14 !important;
+    font-weight: 600 !important;
+    padding: 0.75rem 1.75rem !important;
+    border-radius: 12px !important;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+    box-shadow: 0 10px 25px rgba(6, 214, 160, 0.25) !important;
+    letter-spacing: 0.5px !important;
+
+    &:hover,
+    &:focus-visible {
+        transform: translateY(-3px) !important;
+        box-shadow: 0 15px 35px rgba(6, 214, 160, 0.35) !important;
+        color: #0a0e14 !important;
+        background: linear-gradient(135deg, #00d9ff 0%, #06d6a0 100%) !important;
+        border: none !important;
+    }
+
+    &:active {
+        transform: scale(0.98) !important;
+    }
+}
+
+.btn-secondary {
+    background: rgba(6, 214, 160, 0.1) !important;
+    color: #06d6a0 !important;
+    border: 1.5px solid rgba(6, 214, 160, 0.3) !important;
+    font-weight: 600 !important;
+    padding: 0.75rem 1.75rem !important;
+    border-radius: 12px !important;
+    transition: all 0.3s ease !important;
+
+    &:hover,
+    &:focus-visible {
+        background: rgba(6, 214, 160, 0.2) !important;
+        border-color: rgba(6, 214, 160, 0.6) !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 10px 25px rgba(6, 214, 160, 0.15) !important;
+        color: #06d6a0 !important;
+    }
+}
+
+.btn-outline-primary {
+    background: transparent !important;
+    border: 1.5px solid #06d6a0 !important;
+    color: #06d6a0 !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+
+    &:hover,
+    &:focus-visible {
+        background: rgba(6, 214, 160, 0.1) !important;
+        box-shadow: 0 10px 25px rgba(6, 214, 160, 0.2) !important;
+        transform: translateY(-2px) !important;
+        color: #06d6a0 !important;
+        border-color: #06d6a0 !important;
+    }
+}
+
+// ==================== BOOTSTRAP CARD OVERRIDES ====================
+.card {
+    background: rgba(15, 20, 25, 0.4) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1.5px solid rgba(6, 214, 160, 0.15) !important;
+    border-radius: 16px !important;
+    padding: 1.75rem !important;
+    transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(6, 214, 160, 0.05) 0%, transparent 100%);
+        opacity: 0;
+        transition: opacity 0.35s ease;
+        pointer-events: none;
+    }
+
+    &:hover {
+        background: rgba(15, 20, 25, 0.5) !important;
+        border-color: rgba(6, 214, 160, 0.3) !important;
+        transform: translateY(-6px) !important;
+        box-shadow: 0 20px 40px rgba(6, 214, 160, 0.15) !important;
+
+        &::before {
+            opacity: 1;
+        }
+    }
+
+    .card-body {
+        padding: 0 !important;
+    }
+
+    .card-title {
+        font-weight: 700 !important;
+        color: $text-default-color !important;
+        margin-bottom: 1rem !important;
+        font-size: 1.2rem !important;
+        letter-spacing: -0.5px !important;
+    }
+
+    .card-text {
+        color: rgba($text-default-color, 0.8) !important;
+        line-height: 1.7 !important;
+    }
+}
+
+// ==================== BOOTSTRAP BADGE OVERRIDES ====================
+.badge {
+    display: inline-block !important;
+    padding: 0.4rem 0.9rem !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 0.3px !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.3s ease !important;
+
+    &.bg-primary {
+        background: rgba(6, 214, 160, 0.15) !important;
+        color: #06d6a0 !important;
+        border-color: rgba(6, 214, 160, 0.3) !important;
+
+        &:hover {
+            background: rgba(6, 214, 160, 0.25) !important;
+            border-color: rgba(6, 214, 160, 0.6) !important;
+            box-shadow: 0 5px 15px rgba(6, 214, 160, 0.2) !important;
+            transform: translateY(-2px) !important;
+        }
+    }
+
+    &.bg-secondary {
+        background: rgba(0, 217, 255, 0.1) !important;
+        color: #00d9ff !important;
+        border-color: rgba(0, 217, 255, 0.3) !important;
+
+        &:hover {
+            background: rgba(0, 217, 255, 0.2) !important;
+            border-color: rgba(0, 217, 255, 0.6) !important;
+            box-shadow: 0 5px 15px rgba(0, 217, 255, 0.2) !important;
+            transform: translateY(-2px) !important;
+        }
+    }
+
+    &.bg-warning,
+    &.bg-danger {
+        background: rgba(255, 154, 61, 0.15) !important;
+        color: #ff9a3d !important;
+        border-color: rgba(255, 154, 61, 0.3) !important;
+
+        &:hover {
+            background: rgba(255, 154, 61, 0.25) !important;
+            border-color: rgba(255, 154, 61, 0.6) !important;
+            box-shadow: 0 5px 15px rgba(255, 154, 61, 0.2) !important;
+            transform: translateY(-2px) !important;
+        }
+    }
+}
+
+// ==================== BOOTSTRAP FORM OVERRIDES ====================
+.form-control {
+    background: rgba(10, 14, 20, 0.95) !important;
+    border: 2px solid rgba(6, 214, 160, 0.4) !important;
+    border-radius: 10px !important;
+    color: #ffffff !important;
+    padding: 0.75rem 1rem !important;
+    transition: all 0.3s ease !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+
+    &:focus {
+        background: rgba(15, 20, 25, 0.98) !important;
+        border-color: #06d6a0 !important;
+        box-shadow: 0 0 0 3px rgba(6, 214, 160, 0.2), inset 0 1px 3px rgba(6, 214, 160, 0.1) !important;
+        color: #ffffff !important;
+    }
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.5) !important;
+        opacity: 1 !important;
+    }
+}
+
+textarea.form-control {
+    background: rgba(10, 14, 20, 0.95) !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(6, 214, 160, 0.4) !important;
+
+    &:focus {
+        background: rgba(15, 20, 25, 0.98) !important;
+        border-color: #06d6a0 !important;
+        color: #ffffff !important;
+    }
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.5) !important;
+    }
+}
+
+// Enhanced textarea styling
+textarea.form-control {
+    min-height: 120px !important;
+    resize: vertical !important;
+}
+
+.form-check-input {
+    background-color: rgba(20, 30, 48, 0.8) !important;
+    border: 1.5px solid rgba(6, 214, 160, 0.3) !important;
+    transition: all 0.3s ease !important;
+    width: 1.25em !important;
+    height: 1.25em !important;
+
+    &:checked {
+        background-color: #06d6a0 !important;
+        border-color: #06d6a0 !important;
+        box-shadow: 0 0 15px rgba(6, 214, 160, 0.4) !important;
+    }
+
+    &:focus {
+        border-color: #06d6a0 !important;
+        box-shadow: 0 0 0 3px rgba(6, 214, 160, 0.2) !important;
+    }
+}
+
+// ==================== BOOTSTRAP PROGRESS OVERRIDES ====================
+.progress {
+    height: 6px !important;
+    border-radius: 10px !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(6, 214, 160, 0.1) !important;
+    overflow: hidden !important;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+
+    .progress-bar {
+        background: linear-gradient(90deg, #06d6a0 0%, #00d9ff 100%) !important;
+        box-shadow: 0 0 15px rgba(6, 214, 160, 0.5) !important;
+        animation: progress-glow 2s ease-in-out infinite !important;
+
+        @keyframes progress-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 15px rgba(6, 214, 160, 0.5) !important;
+            }
+
+            50% {
+                box-shadow: 0 0 25px rgba(6, 214, 160, 0.7) !important;
+            }
+        }
+    }
+}
+
+// ==================== BOOTSTRAP ALERT OVERRIDES ====================
+.alert {
+    border-radius: 12px !important;
+    border: 1.5px solid !important;
+    backdrop-filter: blur(10px) !important;
+    padding: 1.25rem !important;
+    transition: all 0.3s ease !important;
+
+    &.alert-primary {
+        background-color: rgba(6, 214, 160, 0.1) !important;
+        border-color: rgba(6, 214, 160, 0.3) !important;
+        color: rgba(6, 214, 160, 0.9) !important;
+    }
+
+    &.alert-secondary {
+        background-color: rgba(0, 217, 255, 0.1) !important;
+        border-color: rgba(0, 217, 255, 0.3) !important;
+        color: rgba(0, 217, 255, 0.9) !important;
+    }
+
+    &.alert-danger,
+    &.alert-warning {
+        background-color: rgba(255, 154, 61, 0.1) !important;
+        border-color: rgba(255, 154, 61, 0.3) !important;
+        color: rgba(255, 154, 61, 0.9) !important;
+    }
+
+    &.alert-success {
+        background-color: rgba(6, 214, 160, 0.15) !important;
+        border-color: #06d6a0 !important;
+        color: #06d6a0 !important;
+    }
+}
+
+// ==================== NAV & TABS OVERRIDES ====================
+.nav-tabs {
+    border-bottom: 1px solid rgba(6, 214, 160, 0.2) !important;
+
+    .nav-link {
+        color: rgba($text-default-color, 0.6) !important;
+        border: none !important;
+        transition: all 0.3s ease !important;
+        font-weight: 600 !important;
+        position: relative !important;
+
+        &:hover {
+            color: #06d6a0 !important;
+        }
+
+        &.active {
+            color: #06d6a0 !important;
+            background-color: transparent !important;
+            border-bottom: 2px solid #06d6a0 !important;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(90deg, #06d6a0 0%, #00d9ff 100%);
+            }
+        }
+    }
+}
+
+// ==================== DROPDOWN OVERRIDES ====================
+.dropdown-menu {
+    background: rgba(15, 20, 25, 0.9) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(6, 214, 160, 0.2) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3) !important;
+
+    .dropdown-item {
+        color: rgba($text-default-color, 0.8) !important;
+        transition: all 0.2s ease !important;
+
+        &:hover,
+        &:focus {
+            background-color: rgba(6, 214, 160, 0.1) !important;
+            color: #06d6a0 !important;
+        }
+
+        &.active {
+            background-color: rgba(6, 214, 160, 0.2) !important;
+            color: #06d6a0 !important;
+        }
+    }
+}
+
+// ==================== PAGINATION OVERRIDES ====================
+.pagination {
+    gap: 0.5rem;
+
+    .page-link {
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        border: 1px solid rgba(6, 214, 160, 0.2) !important;
+        color: rgba($text-default-color, 0.7) !important;
+        border-radius: 8px !important;
+        transition: all 0.3s ease !important;
+
+        &:hover {
+            background-color: rgba(6, 214, 160, 0.1) !important;
+            border-color: #06d6a0 !important;
+            color: #06d6a0 !important;
+            transform: translateY(-2px) !important;
+        }
+    }
+
+    .page-item.active .page-link {
+        background: linear-gradient(135deg, #06d6a0 0%, #00d9ff 100%) !important;
+        border-color: transparent !important;
+        color: #0a0e14 !important;
+    }
+}
+
+// ==================== MODAL OVERRIDES ====================
+.modal-content {
+    background: rgba(15, 20, 25, 0.9) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(6, 214, 160, 0.2) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5) !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(6, 214, 160, 0.1) !important;
+
+    .btn-close {
+        filter: invert(1) !important;
+        opacity: 0.7 !important;
+        transition: all 0.3s ease !important;
+
+        &:hover,
+        &:focus {
+            opacity: 1 !important;
+            transform: rotate(90deg) !important;
+        }
+    }
+}
+
+// ==================== TOOLTIP OVERRIDES ====================
+.tooltip-inner {
+    background-color: rgba(6, 214, 160, 0.2) !important;
+    color: #06d6a0 !important;
+    border: 1px solid rgba(6, 214, 160, 0.3) !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(10px) !important;
+    font-weight: 500 !important;
+    padding: 0.6rem 0.8rem !important;
+}
+
+// ==================== SPINNER OVERRIDES ====================
+.spinner-border {
+    border-color: rgba(6, 214, 160, 0.2) !important;
+    border-right-color: #06d6a0 !important;
+    animation: spinner-spin 0.8s linear infinite !important;
+
+    @keyframes spinner-spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+// ==================== LINK OVERRIDES ====================
+a {
+    color: #06d6a0 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+
+    &:hover {
+        color: #00d9ff !important;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #06d6a0 0%, #00d9ff 100%);
+        transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+// ==================== LIST GROUP OVERRIDES ====================
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(6, 214, 160, 0.1) !important;
+    color: rgba($text-default-color, 0.8) !important;
+    transition: all 0.3s ease !important;
+
+    &:hover {
+        background-color: rgba(6, 214, 160, 0.05) !important;
+        border-color: rgba(6, 214, 160, 0.3) !important;
+        transform: translateX(4px) !important;
+    }
+
+    &.active {
+        background-color: rgba(6, 214, 160, 0.2) !important;
+        border-color: #06d6a0 !important;
+        color: #06d6a0 !important;
+    }
+}
+
+// ==================== TABLE OVERRIDES ====================
+.table {
+    color: rgba($text-default-color, 0.8) !important;
+
+    thead {
+        border-bottom: 2px solid rgba(6, 214, 160, 0.2) !important;
+
+        th {
+            color: #06d6a0 !important;
+            font-weight: 700 !important;
+            background: rgba(6, 214, 160, 0.05) !important;
+            border: none !important;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+            transition: all 0.3s ease !important;
+
+            &:hover {
+                background-color: rgba(6, 214, 160, 0.05) !important;
+            }
+        }
+    }
+}
+
+// ==================== ACCESSIBILITY ====================
+@media (prefers-reduced-motion: reduce) {
+
+    .btn,
+    .card,
+    .badge,
+    .alert,
+    a,
+    .list-group-item {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+// ==================== CRITICAL INPUT TEXT FIX ====================
+// Force white text in all form inputs
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input,
+textarea,
+select,
+.form-control,
+.form-select {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    background-color: rgba(20, 25, 35, 0.95) !important;
+    caret-color: #06d6a0 !important;
+    
+    &:focus,
+    &:active,
+    &:hover {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+    }
+    
+    &::placeholder {
+        color: rgba(200, 200, 200, 0.6) !important;
+        -webkit-text-fill-color: rgba(200, 200, 200, 0.6) !important;
+        opacity: 1 !important;
+    }
+    
+    &::-webkit-input-placeholder {
+        color: rgba(200, 200, 200, 0.6) !important;
+        -webkit-text-fill-color: rgba(200, 200, 200, 0.6) !important;
+    }
+    
+    &::-moz-placeholder {
+        color: rgba(200, 200, 200, 0.6) !important;
+    }
+    
+    &:-ms-input-placeholder {
+        color: rgba(200, 200, 200, 0.6) !important;
+    }
+}
+
+// Autofill fix for webkit browsers
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-text-fill-color: #ffffff !important;
+    -webkit-box-shadow: 0 0 0 1000px rgba(20, 25, 35, 0.98) inset !important;
+    box-shadow: 0 0 0 1000px rgba(20, 25, 35, 0.98) inset !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+    caret-color: #06d6a0 !important;
+}

@@ -13,22 +13,28 @@ $headings-base-sizes: (
     #{$heading},
     .eq-#{$heading} {
         @include generate-dynamic-styles-with-multipliers($size, $headings-breakpoint-multipliers);
-        font-weight: 700;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-weight: $font-weight-bold;
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+        color: #f0f2f5;
     }
 }
 
 // Extra bold headings
 h1,
 .eq-h1 {
-    font-weight: 800;
-    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    font-weight: $font-weight-bolder;
+    letter-spacing: -0.02em;
 }
 
 h2,
 .eq-h2 {
-    font-weight: 800;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+    font-weight: $font-weight-bolder;
+}
+
+h3,
+.eq-h3 {
+    font-weight: $font-weight-bold;
 }
 
 /** Custom Headings **/
@@ -77,31 +83,33 @@ $texts-base-sizes: (
 
 a {
     text-decoration: none;
-    color: lighten($primary, 20%);
+    color: #06d6a0;
+    font-weight: $font-weight-medium;
+    transition: all $transition-base $easing-smooth;
 
     &:hover {
-        color: lighten($primary, 15%);
+        color: #00d9ff;
     }
 
     &.link-darkened {
         color: $primary;
 
         &:hover {
-            color: lighten($primary, 5%);
+            color: lighten($primary, 10%);
         }
     }
 
     &.link-masked {
-        color: $light-7;
+        color: $text-muted;
 
         &:hover {
-            color: lighten($primary, 5%);
+            color: #06d6a0;
         }
     }
 
     &.link-disabled {
         color: $text-default-color;
-        opacity: 0.9;
+        opacity: 0.6;
         pointer-events: none;
     }
 }
@@ -123,21 +131,21 @@ samp {
 
 /** Gradient Text **/
 .text-gradient {
-    background: linear-gradient(135deg, $primary 0%, lighten($primary, 15%) 100%);
+    background: linear-gradient(135deg, #06d6a0 0%, #00d9ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .text-gradient-red {
-    background: linear-gradient(135deg, #ff4757 0%, #ff6b81 50%, #ff4757 100%);
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff9a3d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .text-gradient-accent {
-    background: linear-gradient(135deg, $primary 0%, $success 100%);
+    background: linear-gradient(135deg, #06d6a0 0%, #ff9a3d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -145,32 +153,48 @@ samp {
 
 /** Text Shadows **/
 .text-shadow-sm {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .text-shadow {
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .text-shadow-lg {
-    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .text-shadow-glow {
-    text-shadow: 0 0 10px rgba($primary, 0.5);
+    text-shadow: 0 0 10px rgba(6, 214, 160, 0.4);
 }
 
 .text-shadow-glow-strong {
-    text-shadow: 0 0 20px rgba($primary, 0.8);
+    text-shadow: 0 0 20px rgba(6, 214, 160, 0.6);
 }
 
 /** Font Weight Utilities **/
+.font-weight-light {
+    font-weight: $font-weight-light;
+}
+
+.font-weight-normal {
+    font-weight: $font-weight-normal;
+}
+
+.font-weight-medium {
+    font-weight: $font-weight-medium;
+}
+
 .font-weight-semibold {
-    font-weight: 600;
+    font-weight: $font-weight-semibold;
+}
+
+.font-weight-bold {
+    font-weight: $font-weight-bold;
 }
 
 .font-weight-extrabold {
-    font-weight: 800;
+    font-weight: $font-weight-bolder;
 }
 
 /** Letter Spacing **/
