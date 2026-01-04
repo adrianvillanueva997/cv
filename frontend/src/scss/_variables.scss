@@ -5,9 +5,13 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
 $min-contrast-ratio: 1.5 !default;
 
 /** Typography **/
-$font-family-base: 'Saira', sans-serif;
+$font-family-base: 'Inter', 'Saira', sans-serif;
 $font-family-monospace: 'JetBrains Mono', 'Courier New', monospace;
-$headings-font-weight: 700;
+$headings-font-weight: 600;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
 $font-weight-bold: 700;
 $font-weight-bolder: 800;
 
@@ -38,36 +42,53 @@ $z-index-sidebar: 90;
 $z-index-tab-controller: 95;
 $z-index-loader: 99999;
 
-/** Bootstrap Colors **/
-$primary: #ff4757;
-/* Bold red - energetic & intense */
-$dark: #1a1a2e;
-/* Deep navy-black - sophisticated */
-$success: #0be881;
-/* Vibrant green - modern */
-$danger: #ee5a6f;
+/** Bootstrap Colors - Modern Tech Palette **/
+$primary: #06d6a0;
+/* Modern teal - primary accent */
+$secondary: #00d9ff;
+/* Cyan - secondary accent */
+$tertiary: #ff9a3d;
+/* Warm orange - highlights */
+$dark: #0f1419;
+/* Deep navy - base */
+$success: #06d6a0;
+/* Teal success */
+$danger: #ff6b6b;
 /* Soft red - professional alert */
-$light: #f8f9fa;
-/* Clean white */
+$warning: #ff9a3d;
+/* Orange warning */
+$info: #00d9ff;
+/* Cyan info */
+$light: #f0f2f5;
+/* Slightly warmer white */
 
 /** Layout Colors **/
-$default-section-background: #f5f6fa;
-/* Slightly cooler light background */
-$loader-background: #16213e;
-/* Deep dark blue */
-$text-default-color: #1a1a2e;
-/* Matches dark color */
+$default-section-background: #0f1419;
+/* Deep navy background */
+$default-section-overlay: rgba(6, 214, 160, 0.05);
+/* Subtle teal overlay */
+$loader-background: #0a0e14;
+/* Deep dark background */
+$text-default-color: #f0f2f5;
+/* Light text for dark backgrounds */
+$text-muted: #a0a0a0;
+/* Muted gray text */
 
-/** Nav Colors **/
-$nav-background: #0f1419;
-/* Almost black - edgy & modern */
-$nav-background-selected: lighten($nav-background, 8%);
+/** Nav Colors - Glassmorphic **/
+$nav-background: #0a0e14;
+/* Deep dark base */
+$nav-background-selected: rgba(6, 214, 160, 0.1);
+/* Subtle teal selection */
 $nav-avatar-border-color: $primary;
-/* Bold red border for avatar */
-$nav-highlight: lighten($primary, 15%);
-$nav-hover: lighten($primary, 20%);
+/* Teal border for avatar */
+$nav-highlight: $primary;
+/* Teal highlight */
+$nav-hover: rgba(6, 214, 160, 0.15);
+/* Teal hover state */
 $nav-selected: $primary;
-$nav-contrast: #fcfcfc;
+/* Teal selected */
+$nav-contrast: #f0f2f5;
+/* Light contrast text */
 $nav-contrast-90: rgba($nav-contrast, 0.9);
 $nav-contrast-80: rgba($nav-contrast, 0.8);
 $nav-contrast-70: rgba($nav-contrast, 0.7);
@@ -100,7 +121,21 @@ $light-shades-palette: (
 /** Layout Constraints **/
 $navigation-sidebar-breakpoint: "lg";
 $max-content-width: 2500px;
-$default-border-radius: 10px;
+$default-border-radius: 16px;
+$default-border-radius-sm: 8px;
+$default-border-radius-lg: 24px;
+
+/** Glassmorphism Effects **/
+$glass-blur: 10px;
+$glass-backdrop-filter: blur(10px);
+$glass-border-color: rgba(255, 255, 255, 0.1);
+$glass-background: rgba(15, 20, 25, 0.6);
+
+/** Transition Times **/
+$transition-fast: 150ms;
+$transition-base: 300ms;
+$transition-slow: 500ms;
+$easing-smooth: cubic-bezier(0.4, 0, 0.2, 1);
 
 /** Layout Constraints - Sidebar **/
 $nav-sidebar-width: 320px;
@@ -117,6 +152,40 @@ $nav-tab-controller-height: 60px;
 $nav-tab-controller-with-bottom-offset-height: 65px;
 $nav-section-picker-height: 50px;
 $nav-section-picker-height-compressed: 45px;
+
+/** Premium Spacing System **/
+$spacing-xs: 0.5rem;
+$spacing-sm: 0.75rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 2.5rem;
+$spacing-3xl: 3rem;
+$spacing-4xl: 3.5rem;
+
+/** Premium Shadow System **/
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+$shadow-xl: 0 12px 32px rgba(0, 0, 0, 0.25);
+$shadow-2xl: 0 20px 40px rgba(6, 214, 160, 0.15);
+$shadow-glow: 0 0 20px rgba(6, 214, 160, 0.2);
+$shadow-glow-lg: 0 0 30px rgba(6, 214, 160, 0.3);
+
+/** Premium Border Radius **/
+$border-radius-sm: 8px;
+$border-radius-md: 12px;
+$border-radius-lg: 16px;
+$border-radius-xl: 20px;
+
+/** Transition Values **/
+$transition-base: 0.3s;
+$transition-slow: 0.5s;
+$easing-smooth: cubic-bezier(0.34, 1.56, 0.64, 1);
+$easing-ease: ease;
+$easing-ease-in: ease-in;
+$easing-ease-out: ease-out;
+$easing-ease-in-out: ease-in-out;
 
 /** ArticleTimeline Parameters **/
 $article-timeline-image-size: 100px;
@@ -144,27 +213,27 @@ $article-thread-circle-base-size: 32px;
 
 /** Chart JS Customization **/
 :root {
-    --chart-js-border-color: #{$default-section-background};
-    --chart-js-hover-border-color: #{$light};
+    --chart-js-border-color: rgba(240, 242, 245, 0.1);
+    --chart-js-hover-border-color: #{$primary};
     --nav-background-color: #{$nav-background};
 
-    /* Updated chart colors to match new theme */
-    --chart-color-1: #ff4757;
-    /* Primary red */
-    --chart-color-2: #0be881;
-    /* Success green */
-    --chart-color-3: #ffa502;
+    /* Updated chart colors to match new modern tech theme */
+    --chart-color-1: #06d6a0;
+    /* Primary teal */
+    --chart-color-2: #00d9ff;
+    /* Cyan */
+    --chart-color-3: #ff9a3d;
     /* Orange */
-    --chart-color-4: #5f27cd;
+    --chart-color-4: #9d4edd;
     /* Purple */
     --chart-color-5: #00d2d3;
-    /* Cyan */
-    --chart-color-6: #ff6348;
-    /* Coral */
-    --chart-color-7: #1e90ff;
-    /* Blue */
-    --chart-color-8: #ff6b81;
+    /* Cyan variant */
+    --chart-color-6: #ff6b9d;
     /* Pink */
+    --chart-color-7: #3a86ff;
+    /* Blue */
+    --chart-color-8: #ffa500;
+    /* Gold */
 }
 
 /** Typography - Multipliers (Headers) **/

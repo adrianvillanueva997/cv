@@ -1,39 +1,54 @@
 /** ------------ BODY ----------------- **/
 html {
     scroll-padding-top: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: $loader-background;
+    background: linear-gradient(135deg, #0a0e14 0%, #0f1419 100%);
+    background-attachment: fixed;
+    color: $text-default-color;
+    line-height: 1.6;
 }
 
 body.body-default {
-    background-color: $default-section-background;
+    background: linear-gradient(135deg, #0f1419 0%, #0a0e14 100%);
+    background-attachment: fixed;
 }
 
 body.body-nav-contrast {
-    background-color: darken($nav-background, 3%)!important;
+    background: linear-gradient(135deg, #0a0e14 0%, #0f1419 100%) !important;
+    background-attachment: fixed;
 }
 
 body.body-no-scroll {
-    overflow-y: hidden!important;
+    overflow-y: hidden !important;
+
     @include media-breakpoint-down(lg) {
-        position: fixed!important;
+        position: fixed !important;
     }
 }
 
 /** ----------- SELECTION ------------- **/
 ::-moz-selection {
     color: $dark;
-    background: lighten($primary, 15%);
+    background: #06d6a0;
 }
 
 ::selection {
     color: $dark;
-    background: lighten($primary, 15%);
+    background: #06d6a0;
 }
 
 /** ----------- SHADOWS ---------------- **/
 .trace-shadow {
-    box-shadow: rgba(0, 0, 0, 0.1) 5px 5px, rgba(10, 10, 10, 0.15) 10px 10px;
+    box-shadow: rgba(6, 214, 160, 0.1) 5px 5px, rgba(6, 214, 160, 0.15) 10px 10px;
+}
+
+/** Glass Effect Enhancement **/
+.glass-effect {
+    background: rgba(15, 20, 25, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
 }
