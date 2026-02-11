@@ -1,5 +1,5 @@
 // Imports
-#import "@preview/brilliant-cv:2.0.7": cvSection, cvEntry
+#import "@preview/brilliant-cv:2.0.8": cvSection, cvEntry
 #let metadata = toml("../metadata.toml")
 #let cvSection = cvSection.with(metadata: metadata)
 #let cvEntry = cvEntry.with(metadata: metadata)
