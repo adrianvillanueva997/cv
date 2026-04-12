@@ -45,10 +45,10 @@ display_page_counter = true
 
 [inject]
     # Decide if you want to inject AI prompt or not
-    inject_ai_prompt = false
+    #inject_ai_prompt = false
 
     # Decide if you want to inject keywords or not
-    inject_keywords = true
+    #inject_keywords = true
     injected_keywords_list = [
         "Senior Software Engineer", "Data Engineer", "Platform Engineer", "MLOps",
         "Python", "Rust", "Java", "Go", "TypeScript", "SQL",

@@ -1,25 +1,23 @@
 // Imports
-#import "@preview/brilliant-cv:3.3.0": cvSection, cvEntry
+#import "@preview/brilliant-cv:3.3.0": cv-section, cv-entry
 #let metadata = toml("../metadata.toml")
-#let cvSection = cvSection.with(metadata: metadata)
-#let cvEntry = cvEntry.with(metadata: metadata)
+#let cv-section = cv-section.with(metadata: metadata)
 
 
-#cvSection("Professional Experience")
+#cv-section("Professional Experience")
 
-#cvEntry(
+#cv-entry(
   title: [Data Engineer],
   logo: image("../src/logos/woven_by_toyota.jpg"),
   society: [Woven by Toyota],
   date: [2024 - Present],
   location: [Tokyo, Japan],
   description: list(
-    [Built a scalable, cloud-native data mesh platform on AWS and Databricks, adopted company-wide to enable governed, high-quality data sharing across domains],
-    [Developed a multi-language Kafka ingestion SDK (Rust core with Python, Java, TypeScript, and Go bindings), deployed org-wide for real-time ingestion across heterogeneous systems],
-    [Designed and implemented CI/CD pipelines for ML and data workflows in Databricks, integrating deployment and lifecycle tracking with MLflow],
-    [Improved platform resilience through automated data reconciliation, OpenTelemetry instrumentation, and enforcement of data contracts],
-    [Led development of self-service capabilities, including automated provisioning of Kafka topics, access control groups, and data product registration, reducing onboarding friction across the org],
-    [Created platform documentation, naming conventions, and onboarding guides to support self-serve adoption by engineers, analysts, and ML practitioners],
+    [Built and operated a cloud-native data mesh platform spanning multiple AWS and Databricks accounts, growing from the ground up to 1000+ users],
+[Developed a multi-language Kafka ingestion SDK (Rust core with Python, Java, TypeScript, and Go bindings), deployed org-wide for real-time ingestion across heterogeneous systems],
+[Designed CI/CD pipelines for ML and data workflows in Databricks with MLflow, data contracts, and OpenTelemetry for improved resilience and data quality],
+[Maintained platform reliability through on-call rotations, incident response, and user support; established runbooks and observability practices to reduce mean time to resolution],
+[Led platform adoption through self-service tooling, onboarding teams on medallion architecture and data mesh principles, and collaborating with the engineering hub to ensure CI/CD compliance with company processes],
   ),
   tags: (
     "AWS",
@@ -40,7 +38,7 @@
   ),
 )
 
-#cvEntry(
+#cv-entry(
   title: [Data Engineer],
   society: [Albert Heijn],
   logo: image("../src/logos/albert_heijn.png"),
@@ -65,7 +63,7 @@
   ),
 )
 
-#cvEntry(
+#cv-entry(
   title: [Data Engineer],
   society: [Dashmote],
   date: [2021 - 2022],
@@ -89,7 +87,7 @@
   ),
 )
 
-#cvEntry(
+#cv-entry(
   title: [Software Engineer],
   society: [Ernst & Young (EY)],
   logo: image("../src/logos/ey.png"),

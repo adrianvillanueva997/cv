@@ -1,47 +1,47 @@
 // Imports
-#import "@preview/brilliant-cv:3.3.0": cvSection, cvSkill, hBar
+#import "@preview/brilliant-cv:3.3.0": cv-section, cv-skill, hBar
 #let metadata = toml("../metadata.toml")
-#let cvSection = cvSection.with(metadata: metadata)
+#let cv-section = cv-section.with(metadata: metadata)
 
 
-#cvSection("Skills")
+#cv-section("Skills")
 
-#cvSkill(
+#cv-skill(
   type: [Nationality],
   info: [Spain (EU)],
 )
 
-#cvSkill(
+#cv-skill(
   type: [Languages],
   info: [English (business fluent), Spanish (native)],
 )
 
-#cvSkill(
+#cv-skill(
   type: [Coding],
   info: [Python, Rust, Java, Go, TypeScript, C, JavaScript, HTML/CSS],
 )
 
-#cvSkill(
+#cv-skill(
   type: [Cloud & Infra],
   info: [AWS (Redshift, S3, Glue, Lambda, SageMaker), Azure, GCP, Terraform, Docker, Kubernetes],
 )
 
-#cvSkill(
+#cv-skill(
   type: [Data Engineering],
   info: [PySpark, Pandas, Databricks, Airflow, DBT, Kafka, MLflow, FastAPI],
 )
 
-#cvSkill(
+#cv-skill(
   type: [DevOps],
   info: [CI/CD, GitHub Actions, ArgoCD, Terragrunt, Prometheus, Grafana],
 )
 
-#cvSkill(
+#cv-skill(
   type: [Databases],
   info: [SQL Server, PostgreSQL, MySQL, MongoDB, Athena, Cassandra, Redis],
 )
 
-#cvSkill(
+#cv-skill(
   type: [Interests],
   info: [Hiking, Reading, Photography, Cooking, Gaming, Music production, Cats],
 )
