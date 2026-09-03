@@ -33,11 +33,11 @@ importers:
         specifier: ^4.1.0
         version: 4.1.1
       primeicons:
-        specifier: ^7.0.0
-        version: 7.0.0
+        specifier: ^8.0.0
+        version: 8.0.0
       swiper:
-        specifier: ^12.0.0
-        version: 12.1.4
+        specifier: ^14.0.0
+        version: 14.2.0
       vue:
         specifier: ^3.5.22
         version: 3.5.34
@@ -49,8 +49,8 @@ importers:
         version: 5.0.7(@vue/compiler-sfc@3.5.34)(vue@3.5.34)
     devDependencies:
       '@rollup/plugin-yaml':
-        specifier: ^4.1.2
-        version: 4.1.2(rollup@4.57.1)
+        specifier: ^5.0.0
+        version: 5.0.0(rollup@4.57.1)
       '@vitejs/plugin-vue':
         specifier: ^6.0.0
         version: 6.0.6(vite@7.3.1(sass@1.99.0)(yaml@2.9.0))(vue@3.5.34)
@@ -561,11 +561,11 @@ packages:
   '@rolldown/pluginutils@1.0.0-rc.13':
     resolution: {integrity: sha512-3ngTAv6F/Py35BsYbeeLeecvhMKdsKm4AoOETVhAA+Qc8nrA2I0kF7oa93mE9qnIurngOSpMnQ0x2nQY2FPviA==}
 
-  '@rollup/plugin-yaml@4.1.2':
-    resolution: {integrity: sha512-RpupciIeZMUqhgFE97ba0s98mOFS7CWzN3EJNhJkqSv9XLlWYtwVdtE6cDw6ASOF/sZVFS7kRJXftaqM2Vakdw==}
+  '@rollup/plugin-yaml@5.0.0':
+    resolution: {integrity: sha512-9XOiRGYJjDwmEwR15kuxw+RytZFKtEWshoXuITrtS6+57BVMQMzDfhmSO/xfQOAY5psQv1IrxhQTUqPNppe4lQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+      rollup: ^2.78.0||^3.0.0||^4.0.0
     peerDependenciesMeta:
       rollup:
         optional: true
@@ -1135,8 +1135,8 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  primeicons@7.0.0:
-    resolution: {integrity: sha512-jK3Et9UzwzTsd6tzl2RmwrVY/b8raJ3QZLzoDACj+oTJ0oX7L9Hy+XnVwgo4QVKlKpnP/Ur13SXV/pVh4LzaDw==}
+  primeicons@8.0.0:
+    resolution: {integrity: sha512-eZGk+Mgb4fE+LkJi9LvllbnB4RVUF9kzmnLVnT3ZMY6stqKVh7TUJ0mFoMNIEgTnJSvhaGcJotDiSvtVvkHd7g==}
 
   quansync@0.2.11:
     resolution: {integrity: sha512-AifT7QEbW9Nri4tAwR5M/uzpBuqfZf+zwaEM/QkzEjj7NBuFD2rBuy0K3dE+8wltbezDV7JMA0WfnCPYRSYbXA==}
@@ -1206,8 +1206,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  swiper@12.1.4:
-    resolution: {integrity: sha512-bihiwoKMOQwW8FfdUbo1DgkVH25E+4ZELIq0oopL1KTKBteLuaTMi/wwFjMxtlhTkk45k3XQ89D1Fvv0spSqBA==}
+  swiper@14.2.0:
+    resolution: {integrity: sha512-GsL4M9Fq7Sg22OyL3SjdNj/0bxTfIxPJJHHW394Li0u5vYtExi0a09iBUc8CuLafJi5pAlH2AHUe1PocxHl45g==}
     engines: {node: '>= 4.7.0'}
 
   tinyglobby@0.2.15:
@@ -1665,7 +1665,7 @@ snapshots:
 
   '@rolldown/pluginutils@1.0.0-rc.13': {}
 
-  '@rollup/plugin-yaml@4.1.2(rollup@4.57.1)':
+  '@rollup/plugin-yaml@5.0.0(rollup@4.57.1)':
     dependencies:
       '@rollup/pluginutils': 5.3.0(rollup@4.57.1)
       js-yaml: 4.1.1
@@ -2200,7 +2200,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  primeicons@7.0.0: {}
+  primeicons@8.0.0: {}
 
   quansync@0.2.11: {}
 
@@ -2312,7 +2312,7 @@ snapshots:
       picocolors: 1.1.1
       sax: 1.5.0
 
-  swiper@12.1.4: {}
+  swiper@14.2.0: {}
 
   tinyglobby@0.2.15:
     dependencies:
